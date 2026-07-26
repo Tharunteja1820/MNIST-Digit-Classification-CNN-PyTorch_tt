@@ -1,27 +1,30 @@
-# Fashion-MNIST CNN Classification using PyTorch
+# MNIST Digit Classification using CNN in PyTorch
 
 ## small overview :
 This project implements a Simple Convolutional Neural Network (CNN) using PyTorch to classify images from the Fashion-MNIST dataset.
 The model learns to identify different types of clothing images such as shirts, shoes, bags, and dresses.
 
-## Dataset
-Fashion-MNIST dataset (downloaded from kaggle) contains:
-- Original dataset size: 70,000 images
-- Images used for training/testing: 48,000 images (selected due to no GPU availability)
+This project uses the MNIST handwritten digit dataset.
+
+Dataset details:
+- Total images: 60,000
+- Images used: 48,000
+- Testing images: 12,000
 - Image size: 28 × 28 pixels
-- Number of classes: 10 clothing categories
+- Number of classes: 10 digits (0-9)
+The dataset contains grayscale images of handwritten digits.
 
 Classes:
-- T-shirt / Top
-- Trouser
-- Pullover
-- Dress
-- Coat
-- Sandal
-- Shirt
-- Sneaker
-- Bag
-- Ankle Boot
+- Digit 0
+- Digit 1
+- Digit 2
+- Digit 3
+- Digit 4
+- Digit 5
+- Digit 6
+- Digit 7
+- Digit 8
+- Digit 9
 
 ## Technologies Used
 - Python
@@ -35,7 +38,7 @@ Classes:
 - Framework: PyTorch
 - Model: Convolutional Neural Network (CNN)
 - Epochs: 50
-- Dataset Used: 48,000 images
+- Dataset Used: 60,000 images
 - Hardware: CPU (No GPU acceleration)
 
 ## Model Architecture
@@ -47,8 +50,8 @@ The CNN model contains:
 - Fully connected layers
 
 ## Project Workflow
-1. Load Fashion-MNIST dataset
-2. Preprocess and normalize images
+1. Load MNIST dataset
+2. Preprocess images
 3. Build CNN model
 4. Train the model
 5. Evaluate performance
